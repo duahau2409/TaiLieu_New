@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 7.2</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <style>
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+
+    .col {
+      padding-top: 10px;
+      padding-left: 4px;
+      padding-right: 4px;
+      box-sizing: border-box;
+      flex: 1;
+    }
+
+    .question {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .button {
+      display: flex;
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: auto;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Bài Thi</h1>
+      <div>
+        <span>Chọn đề thi: </span>
+        <button onclick="handleExam('dia')">Địa</button>
+        <button onclick="handleExam('su')">Sử</button>
+      </div>
+      <div class="content"></div>
+      
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
